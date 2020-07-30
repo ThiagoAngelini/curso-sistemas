@@ -1,50 +1,44 @@
 .boton
 {
 	background-color: rgb(31, 162, 238);
-	color: #FFFFFF;
-	border-color: #272274;
+	color: #ffffff;
+	border-color: #2a66e6;
 	border-radius: 6px;
 	width: 100%;
 	margin:0 auto;
-	display:block;
 }
 	
 .signo
 {
 	background-color: #2ECC71;
 	color: #FFFFFF;
-	border-color: #272274;
+	border-color: #116e4b;
 	border-radius: 6px;
 	width: 100%;
-	margin:0 auto;
-
-	
+	margin: auto;
 }
 .eliminar
 {
 	background-color: #fa3a24;
 	color: #FFFFFF;
-	border-color: #272274;
+	border-color: #9e0c0c;
 	width: 100%;
 	border-radius: 5px;
 	margin:0 auto;
-
 }
 	
 .igual
 {
 	background-color: #f89c09;
 	color: #FFFFFF;
-	border-color: #272274;
+	border-color: #923e05;
 	width: 100%;
 	border-radius: 6px;
 	margin:0 auto;
-	
-	
 }
 .pantalla
 {
 	border-radius: 5px;
 	margin:0 auto;
-	
+	border-color: #000000;
 }
