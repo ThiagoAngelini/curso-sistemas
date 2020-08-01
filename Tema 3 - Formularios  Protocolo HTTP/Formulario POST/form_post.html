@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <title>Metodo POST</title>
+    </head>
+    <body>
+        <form action="form_post_server.php" method="POST">
+            <table>
+                <tr>
+					<td>
+						<label>Nombre:</label>
+                        <input type="text" name="name" required></input>
+					</td>
+                </tr>
+                <tr>
+					<td>
+						<label>Apellidos:</label>
+						<input type="text" name="surname" required></input>
+					</td>
+				</tr>
+
+                <tr>
+					<td>
+						<label>Genero:</label>
+                            <input type="radio" name="gender" value="Masculino" required>
+                            <label for="gender1">Masculino</label>
+                            <input type="radio" name="gender" value="Femenino" required>
+                            <label for="gender2">Femenino</label>
+                        </td>	
+                </tr>
+
+                <tr>
+					<td>
+                        <label>Fecha de nacimiento:</label>
+                        <input type="date" name="birth" required>
+						
+					</td>
+                </tr>
+            
+                <tr>
+					<td>
+						<label>Pais:</label>
+						<input type="text" name="country" required></input>
+					</td>
+                </tr>
+                
+                <tr>
+					<td>
+						<label>Codigo postal:</label>
+						<input type="number" name="number" required></input>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>
+						<label>Correo electrónico:</label>
+						<input type="email" name="email" placeholder="Ingrese un correo valido" required></input>
+					</td>
+                </tr>
+                
+                <tr>
+					<td>
+						<label>Contraseña:</label>
+                        <input type="password" name="password" id="password" pattern=".{8,}" placeholder="Min. 8 caracteres" required></input>
+                        <button type="button" onclick="mostrarContrasena()">Mostrar Contraseña</button>
+                    </td>
+                
+                <tr>
+                    <td>
+						<input type="submit" value="Enviar formulario"></input>
+						<input type="reset" value="Borrar formulario"></input>
+					</td>
+                </tr>
+            </table>
+        </form>
+
+        <script>
+            function mostrarContrasena(){
+                var tipo = document.getElementById("password");
+                if(tipo.type == "password"){
+                tipo.type = "text";
+                }else{
+                tipo.type = "password";
+                    }
+                }
+        </script>
+    </body>
+</html>
