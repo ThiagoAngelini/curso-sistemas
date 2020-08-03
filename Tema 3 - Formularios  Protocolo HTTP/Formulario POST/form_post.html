@@ -7,7 +7,7 @@
         <title>Metodo POST</title>
     </head>
     <body>
-        <form action="form_post_server.php" method="POST">
+        <form action="form_post_server.php" method="POST" enctype="multipart/form-data">
             <table>
                 <tr>
 					<td>
@@ -67,6 +67,14 @@
                         <input type="password" name="password" id="password" pattern=".{8,}" placeholder="Min. 8 caracteres" required></input>
                         <button type="button" onclick="mostrarContrasena()">Mostrar Contraseña</button>
                     </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Subir archivo</label>
+                        <input type="file" name="file" accept=".jpg,.png,.pdf"></input>
+                    </td>
+                </tr>
                 
                 <tr>
                     <td>
