@@ -1,0 +1,5 @@
+Hola Thiago!!
+Muy bien tu trabajo. Está prolijo y cumple con todo lo pedido!
+PD: Me gustó tu intento de JavaScript para mostrar la contraseña del input type=password.
+
+Abrazo!!
