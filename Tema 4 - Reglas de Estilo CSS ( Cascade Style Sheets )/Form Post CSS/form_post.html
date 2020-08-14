@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Metodo POST</title>
+    </head>
+    <body>
+        <div class="form">
+        <form action="form_post_server.php" method="POST" enctype="multipart/form-data">
+
+           <div class="w3-container w3-light-grey w3-border-bottom w3-center">
+                <h1 class="w3-text-gray"><b>Create Account</b></h1>
+            </div>
+                 
+                <table class="table">
+                    
+                        <tr>
+                            <td>
+                                <label class="w3-text-teal"><b>First name*</b></label>
+                                <br>
+                                <input class="w3-input w3-border w3-round" type="text" name="name" placeholder="enter your first name" required></input>
+                            </td>
+                            <td>
+                                <label class="w3-text-teal"><b>Last name</b></label>
+                                <br>
+                                <input class="w3-input w3-border w3-round" type="text" name="lastname" placeholder="enter your last name"></input>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <label class="w3-text-teal"><b>Email*</b></label>
+                                <br>
+                                <input class="w3-input w3-border w3-round" type="email" name="email" placeholder="enter your mail" required></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="w3-text-teal"><b>Password*</b></label>
+                                <br>
+                                <input class="w3-input w3-border w3-round" type="password" name="password" id="password" placeholder="enter your password" required></input>
+                            </td>
+                            <td>
+                                <label class="w3-text-teal"><b>Confirm Password*</b></label>
+                                <br>
+                                <input class="w3-input w3-border w3-round" type="password" name="password" id="password" placeholder="enter your password again" required></input>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <label class="w3-text-teal"><b>Gender:</b></label>
+                                <br>
+                                <input type="radio" name="gender" value="Masculino">
+                                <label for="gender1">Male</label>
+                                <input type="radio" name="gender" value="Femenino">
+                                <label for="gender2">Female</label>
+                            </td>	
+                            <td>
+                                <label class="w3-text-teal"><b>Hobbies</b></label>
+                                <br>
+                                <input type="checkbox" id="recomendation1" name="Music" value="Music">
+                                <label for="recomendation1">Music</label>
+                                <input type="checkbox" id="recomendation2" name="Sports" value="Sports">
+                                <label for="recomendation2">Sports</label>
+                                <input type="checkbox" id="recomendation3" name="Travel" value="Travel">
+                                <label for="recomendation3">Travel</label>
+                                <input type="checkbox" id="recomendation4" name="Movies" value="Movies">
+                                <label for="recomendation4">Movies</label>
+                            </td>
+                        </tr>
+                            <td>
+                                <label class="w3-text-teal"><b>Source of income</b></label>
+                                <br>
+                                <select class="w3-input w3-border w3-round" name="browserTime" placeholder="Empleoyed">
+                                    <option value="2">Employed</option>
+                                    <option value="4">freelance</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label class="w3-text-teal"><b>Income</b></label>
+                                <br>
+                                <input class="w3-input" type="range" id="income" name="income" min="10" max="100">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label class="w3-text-teal"><b>Upload Profile Picture</b></label>
+                                <br>
+                                <input type="file" name="file" accept=".jpg,.png,"></input>
+                            </td>
+                            <td>
+                                <label class="w3-text-teal"><b>Age</b></label>
+                                <br>
+                                <input class="w3-input w3-border w3-round" type="number" name="age"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label class="w3-text-teal"><b>Bio</b> </label>
+                                <br>
+                                <textarea class="w3-input w3-border w3-round" name="bio"  placeholder="write a biography"></textarea>
+                            </td>
+                        </tr>
+                            
+                 
+                </table>
+
+            <div class="w3-container w3-light-grey w3-border-top">
+                <input class="w3-btn w3-teal w3-round w3-right w3-margin" type="submit" value="Create"></input>
+             </div>
+
+        </form>
+        </div>
+    </body>
+</html>
