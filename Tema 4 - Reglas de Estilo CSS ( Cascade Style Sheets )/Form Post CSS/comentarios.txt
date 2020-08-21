@@ -1,0 +1,5 @@
+Hola Thiago,
+Tu trabajo está excelente.
+También podés estilizar los input(text) con class="w3-input"
+
+¡Saludos!
